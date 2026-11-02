@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="655.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.questionsolvingmidterm.politicianController">
+   <children>
+      <Label layoutX="310.0" layoutY="140.0" text="anualMembershipfee" />
+      <TextField fx:id="annualMembershipTF" layoutX="436.0" layoutY="136.0" />
+      <Label layoutX="365.0" layoutY="93.0" text="Partyname" />
+      <TextField fx:id="partyNameTF" layoutX="436.0" layoutY="89.0" />
+      <Label layoutX="366.0" layoutY="45.0" text="memberId" />
+      <TextField fx:id="memberIdTF" layoutX="436.0" layoutY="41.0" />
+      <ComboBox fx:id="memberTypeCB" layoutX="125.0" layoutY="41.0" prefWidth="150.0" />
+      <CheckBox fx:id="isGovtPositionCHK" layoutX="82.0" layoutY="78.0" mnemonicParsing="false" text="isGovtPosition" />
+      <CheckBox fx:id="hasownanyelectionCHK" layoutX="83.0" layoutY="115.0" mnemonicParsing="false" text="hasownanyelection" />
+      <DatePicker fx:id="dateOfjoinningD" layoutX="119.0" layoutY="154.0" />
+      <Label layoutX="37.0" layoutY="45.0" text="memberType" />
+      <Label layoutX="37.0" layoutY="149.0" text="dateOfjoinning" />
+      <Button layoutX="31.0" layoutY="587.0" mnemonicParsing="false" onAction="#averageButton" text="show average" />
+      <Button layoutX="201.0" layoutY="192.0" mnemonicParsing="false" onAction="#validateBUTTON" prefHeight="26.0" prefWidth="158.0" text="Add to ArrayList" />
+      <Button layoutX="254.0" layoutY="328.0" mnemonicParsing="false" onAction="#FilterButton" text="Load Table" />
+      <TableView fx:id="tableview" layoutX="11.0" layoutY="363.0" prefHeight="200.0" prefWidth="578.0">
+        <columns>
+          <TableColumn fx:id="memberIdTC" prefWidth="112.00000286102295" text="member ID " />
+          <TableColumn fx:id="memberTypeTC" prefWidth="124.79998779296875" text="member type " />
+            <TableColumn fx:id="isgovernmentTC" prefWidth="118.39996337890625" text="is government " />
+            <TableColumn fx:id="dateOFjoiningTC" prefWidth="118.4000244140625" text="date of joining " />
+            <TableColumn fx:id="hasownTC" prefWidth="104.80001831054688" text="has own" />
+        </columns>
+      </TableView>
+      <Line endX="429.0" layoutX="171.0" layoutY="272.0" startX="-170.99998474121094" />
+      <Label layoutX="483.0" layoutY="604.0" text="show average" />
+      <ComboBox fx:id="memberTypeFilterCB" layoutX="404.0" layoutY="281.0" prefWidth="150.0" />
+      <Label layoutX="324.0" layoutY="285.0" text="memberType" />
+      <CheckBox fx:id="hasownanyelectionFilterCHK" layoutX="83.0" layoutY="285.0" mnemonicParsing="false" text="hasownanyelection" />
+   </children>
+</AnchorPane>
